@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "version": "lerna version --conventional-commits --no-push"
+  },
   "devDependencies": {
     "@types/node": "^22.13.1",
     "lerna": "^8.1.9",
