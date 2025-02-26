@@ -22,6 +22,10 @@ export class MyComponent {
    */
   @Prop() last: string;
 
+  connectedCallback() {
+    console.log('Lib configuration', (window as any).libElementsConfig);
+  }
+
   private getText(): string {
     return format(this.first, this.middle, this.last);
   }

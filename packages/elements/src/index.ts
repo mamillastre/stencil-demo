@@ -10,3 +10,11 @@
 
 export { format } from './utils/utils';
 export type * from './components.d.ts';
+
+/**
+ * Initialize the Elements library
+ * @param config
+ */
+export function initialize(config: any): void {
+  (window as any).libElementsConfig = config;
+}
