@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core';
+import { angularOutputTarget } from '@stencil/angular-output-target';
 
 export const config: Config = {
   namespace: 'elements',
@@ -9,7 +10,7 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
-      customElementsExportBehavior: 'auto-define-custom-elements',
+      customElementsExportBehavior: 'single-export-module',
       externalRuntime: false,
     },
     {
@@ -19,8 +20,14 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
+    angularOutputTarget({
+      componentCorePackage: 'elements',
+      outputType: 'standalone',
+      directivesProxyFile: '../angular/projects/rdr-elements/src/lib/stencil-generated/components.ts',
+      customElementsDir: 'dist/components',
+    }),
   ],
   testing: {
-    browserHeadless: "shell",
+    browserHeadless: 'shell',
   },
 };
