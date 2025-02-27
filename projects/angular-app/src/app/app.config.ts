@@ -1,6 +1,6 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideRdr } from 'rdr-elements';
+import { provideRdr } from 'angular-elements';
 
 import { routes } from './app.routes';
 

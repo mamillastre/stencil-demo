@@ -18,8 +18,8 @@
     "target": "ES2022",
     "module": "ES2022",
     "paths": {
-      "rdr-elements": [
-        "../../packages/angular/dist/rdr-elements"
+      "angular-elements": [
+        "../../packages/angular/dist/angular-elements"
       ]
     }
   },

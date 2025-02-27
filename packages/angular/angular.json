@@ -1,9 +1,9 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "../../node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rdr-elements": {
+    "angular-elements": {
       "projectType": "library",
       "root": "projects/rdr-elements",
       "sourceRoot": "projects/rdr-elements/src",
@@ -12,7 +12,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/rdr-elements/ng-package.json"
+            "project": "ng-package.json"
           },
           "configurations": {
             "production": {
