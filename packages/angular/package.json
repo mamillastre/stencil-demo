@@ -1,6 +1,17 @@
 {
   "name": "angular-elements",
   "version": "0.0.1",
+  "module": "dist/angular-elements/fesm2022/angular-elements.mjs",
+  "typings": "dist/angular-elements/index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./dist/angular-elements/package.json"
+    },
+    ".": {
+      "types": "./dist/angular-elements/index.d.ts",
+      "default": "./dist/angular-elements/fesm2022/angular-elements.mjs"
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
