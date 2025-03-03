@@ -1,0 +1,17 @@
+{
+  "defaultBase": "master",
+  "targetDefaults": {
+    "start": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "build": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ]
+    }
+  }
+}
