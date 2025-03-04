@@ -6,7 +6,7 @@ const componentCorePackage = '@stencil-demo/elements';
 const customElementsDir = 'dist/components';
 
 export const config: Config = {
-  namespace: 'StencilDemo',
+  namespace: 'stencil-demo',
   outputTargets: [
     {
       type: 'dist',
@@ -37,6 +37,7 @@ export const config: Config = {
       customElementsDir,
     }),
   ],
+  buildEs5: 'prod',
   testing: {
     browserHeadless: 'shell',
   },
