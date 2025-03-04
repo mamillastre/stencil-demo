@@ -3,10 +3,10 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-elements": {
+    "lib": {
       "projectType": "library",
-      "root": "projects/rdr-elements",
-      "sourceRoot": "projects/rdr-elements/src",
+      "root": ".",
+      "sourceRoot": "lib",
       "prefix": "lib",
       "architect": {
         "build": {
@@ -16,10 +16,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/rdr-elements/tsconfig.lib.prod.json"
+              "tsConfig": "./tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/rdr-elements/tsconfig.lib.json"
+              "tsConfig": "./tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/rdr-elements/tsconfig.spec.json",
+            "tsConfig": "./tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

@@ -6,7 +6,7 @@ import { ElementsConfig, initialize } from '@stencil-demo/elements';
 /**
  * Sets up providers necessary to use the RDR library in the application.
  */
-export function provideRdr(config?: ElementsConfig) {
+export function provideAngularElements(config?: ElementsConfig) {
   return makeEnvironmentProviders([
     provideAppInitializer(() => initialize(config)),
     // Define all custom elements in the app. For test purpose, incompatible with the standalone components

@@ -14,6 +14,12 @@ Launch the stencil app:
 npm start
 ```
 
+Build the libraries:
+
+```
+npm run build
+```
+
 ## Useful commands
 
 | Command           | Description                                                      |

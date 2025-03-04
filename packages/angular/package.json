@@ -1,15 +1,15 @@
 {
   "name": "@stencil-demo/angular",
   "version": "0.0.1",
-  "module": "dist/angular-elements/fesm2022/stencil-demo-angular.mjs",
-  "typings": "dist/angular-elements/index.d.ts",
+  "module": "dist/lib/fesm2022/stencil-demo-angular.mjs",
+  "typings": "dist/lib/index.d.ts",
   "exports": {
     "./package.json": {
-      "default": "./dist/angular-elements/package.json"
+      "default": "./dist/lib/package.json"
     },
     ".": {
-      "types": "./dist/angular-elements/index.d.ts",
-      "default": "./dist/angular-elements/fesm2022/stencil-demo-angular.mjs"
+      "types": "./dist/lib/index.d.ts",
+      "default": "./dist/lib/fesm2022/stencil-demo-angular.mjs"
     }
   },
   "scripts": {

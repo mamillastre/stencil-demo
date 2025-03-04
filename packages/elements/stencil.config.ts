@@ -27,7 +27,7 @@ export const config: Config = {
     angularOutputTarget({
       componentCorePackage,
       outputType: 'standalone',
-      directivesProxyFile: '../angular/projects/rdr-elements/src/lib/stencil-generated/components.ts',
+      directivesProxyFile: '../angular/lib/stencil-generated/components.ts',
       customElementsDir,
     }),
     vueOutputTarget({

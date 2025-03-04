@@ -1,6 +1,6 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { ElementsConfig, provideRdr } from '@stencil-demo/angular';
+import { ElementsConfig, provideAngularElements } from '@stencil-demo/angular';
 
 import { routes } from './app.routes';
 
@@ -10,6 +10,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideRdr(config),
+    provideAngularElements(config),
   ],
 };
