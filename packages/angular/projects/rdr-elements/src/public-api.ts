@@ -4,4 +4,4 @@
 
 export * from './lib';
 export * from './lib/stencil-generated/components';
-export type { ElementsConfig } from 'elements';
+export type { ElementsConfig } from '@stencil-demo/elements';

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MyComponent } from 'angular-elements';
+import { MyComponent } from '@stencil-demo/angular';
 
 @Component({
   selector: 'app-root',

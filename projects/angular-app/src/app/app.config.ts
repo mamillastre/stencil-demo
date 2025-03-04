@@ -1,6 +1,6 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { ElementsConfig, provideRdr } from 'angular-elements';
+import { ElementsConfig, provideRdr } from '@stencil-demo/angular';
 
 import { routes } from './app.routes';
 

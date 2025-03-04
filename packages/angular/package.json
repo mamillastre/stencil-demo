@@ -1,7 +1,7 @@
 {
-  "name": "angular-elements",
+  "name": "@stencil-demo/angular",
   "version": "0.0.1",
-  "module": "dist/angular-elements/fesm2022/angular-elements.mjs",
+  "module": "dist/angular-elements/fesm2022/stencil-demo-angular.mjs",
   "typings": "dist/angular-elements/index.d.ts",
   "exports": {
     "./package.json": {
@@ -9,7 +9,7 @@
     },
     ".": {
       "types": "./dist/angular-elements/index.d.ts",
-      "default": "./dist/angular-elements/fesm2022/angular-elements.mjs"
+      "default": "./dist/angular-elements/fesm2022/stencil-demo-angular.mjs"
     }
   },
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "tslib": "^2.3.0",
-    "elements": "^0.0.1"
+    "@stencil-demo/elements": "^0.0.1"
   },
   "devDependencies": {
     "@angular/animations": "^19.1.0",
@@ -36,7 +36,6 @@
     "@angular/platform-browser": "^19.1.0",
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
-    "elements": "^0.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0",

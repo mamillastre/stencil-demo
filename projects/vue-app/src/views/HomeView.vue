@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MyComponent } from "vue-elements";
+import { MyComponent } from "@stencil-demo/vue";
 </script>
 
 <template>

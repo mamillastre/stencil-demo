@@ -2,11 +2,11 @@ import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
 
-const componentCorePackage = 'elements';
+const componentCorePackage = '@stencil-demo/elements';
 const customElementsDir = 'dist/components';
 
 export const config: Config = {
-  namespace: 'elements',
+  namespace: 'StencilDemo',
   outputTargets: [
     {
       type: 'dist',

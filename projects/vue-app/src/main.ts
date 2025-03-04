@@ -3,7 +3,7 @@ import "./assets/main.css";
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import { VueElements, type ElementsConfig } from "vue-elements";
+import { VueElements, type ElementsConfig } from "@stencil-demo/vue";
 
 const app = createApp(App);
 

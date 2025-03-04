@@ -6,6 +6,10 @@
     "projects/*"
   ],
   "scripts": {
+    "start": "lerna run start --scope=@stencil-demo/elements",
+    "build": "lerna run build --scope=@stencil-demo/*",
+    "angular": "lerna run start --scope=angular-app",
+    "vue": "lerna run start --scope=vue-app",
     "version": "lerna version --conventional-commits --no-push"
   },
   "devDependencies": {
