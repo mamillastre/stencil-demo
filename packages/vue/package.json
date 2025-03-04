@@ -1,0 +1,19 @@
+{
+  "name": "vue-elements",
+  "version": "0.0.1",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "elements": "*"
+  }
+}

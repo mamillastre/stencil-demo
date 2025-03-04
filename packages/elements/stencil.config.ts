@@ -1,5 +1,9 @@
 import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { vueOutputTarget } from '@stencil/vue-output-target';
+
+const componentCorePackage = 'elements';
+const customElementsDir = 'dist/components';
 
 export const config: Config = {
   namespace: 'elements',
@@ -21,10 +25,16 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     angularOutputTarget({
-      componentCorePackage: 'elements',
+      componentCorePackage,
       outputType: 'standalone',
       directivesProxyFile: '../angular/projects/rdr-elements/src/lib/stencil-generated/components.ts',
-      customElementsDir: 'dist/components',
+      customElementsDir,
+    }),
+    vueOutputTarget({
+      componentCorePackage,
+      proxiesFile: '../vue/lib/stencil-generated/components.ts',
+      includeImportCustomElements: true,
+      customElementsDir,
     }),
   ],
   testing: {

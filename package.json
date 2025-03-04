@@ -9,8 +9,10 @@
     "version": "lerna version --conventional-commits --no-push"
   },
   "devDependencies": {
+    "@stencil/vue-output-target": "^0.9.5",
     "@types/node": "^22.13.1",
     "lerna": "^8.1.9",
+    "rimraf": "^6.0.1",
     "typescript": "^5.7.3"
   }
 }

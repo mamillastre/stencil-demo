@@ -12,6 +12,13 @@ export { format } from './utils/utils';
 export type * from './components.d.ts';
 
 /**
+ * The library configuration
+ */
+export interface ElementsConfig {
+  techno?: string;
+}
+
+/**
  * Initialize the Elements library
  * @param config
  */
