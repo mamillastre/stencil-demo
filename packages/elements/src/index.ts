@@ -11,6 +11,12 @@
 export { format } from './utils/utils';
 export type * from './components.d.ts';
 
+declare global {
+  interface Window {
+    libElementsConfig: ElementsConfig;
+  }
+}
+
 /**
  * The library configuration
  */
@@ -22,6 +28,6 @@ export interface ElementsConfig {
  * Initialize the Elements library
  * @param config
  */
-export function initialize(config: any): void {
-  (window as any).libElementsConfig = config;
+export function initialize(config: ElementsConfig): void {
+  window.libElementsConfig = config;
 }

@@ -26,7 +26,7 @@ export class MyComponent {
   @Prop() last: string;
 
   connectedCallback() {
-    console.log('Lib configuration', (window as any).libElementsConfig);
+    console.log('Lib configuration', window.libElementsConfig);
   }
 
   private getText(): string {
