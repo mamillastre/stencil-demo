@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo HTML</title>
 
-    <script type="module" src="../../packages/elements/dist/stencil-demo/stencil-demo.esm.js"></script>
-    <script nomodule src="../../packages/elements/dist/stencil-demo/stencil-demo.js"></script>
-    <script>
-        window.libElementsConfig = {
-            test: true
-        };
-    </script>
+  <script type="module" src="../../packages/elements/dist/stencil-demo/stencil-demo.esm.js"></script>
+  <script nomodule src="../../packages/elements/dist/stencil-demo/stencil-demo.js"></script>
+  <script>
+    window.libElementsConfig = {
+      test: true
+    };
+  </script>
 </head>
 
 <body>
-    <my-component first="first"></my-component>
+  <my-component first="first"></my-component>
+  <my-layout>
+    TEST
+    <div slot="header">Header</div>
+  </my-layout>
 </body>
 
 </html>

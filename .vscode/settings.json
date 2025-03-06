@@ -1,0 +1,5 @@
+{
+    "html.customData": [
+        "./node_modules/@stencil-demo/elements/docs/vscode-data.json"
+    ]
+}

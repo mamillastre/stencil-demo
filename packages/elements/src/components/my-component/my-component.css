@@ -1,3 +1,6 @@
+/**
+ * @prop --example-variable: A CSS variable example for the doc
+ */
 :host {
   display: block;
 }

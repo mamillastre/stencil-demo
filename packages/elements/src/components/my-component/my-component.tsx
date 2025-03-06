@@ -1,6 +1,9 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
+/**
+ * The default demo component
+ */
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
@@ -10,12 +13,12 @@ export class MyComponent {
   /**
    * The first name
    */
-  @Prop() first: string;
+  @Prop() first!: string;
 
   /**
    * The middle name
    */
-  @Prop() middle: string;
+  @Prop() middle?: string;
 
   /**
    * The last name

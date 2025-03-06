@@ -1,0 +1,13 @@
+/**
+ * @prop --content-color: Example variable for the content color
+ */
+
+:host {
+  --content-color: currentcolor;
+
+  display: block;
+}
+
+.content {
+  color: var(--content-color, currentcolor);
+}

@@ -6,6 +6,9 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    /**
+     * The default demo component
+     */
     interface MyComponent {
         /**
           * The first name
@@ -18,26 +21,49 @@ export namespace Components {
         /**
           * The middle name
          */
-        "middle": string;
+        "middle"?: string;
+    }
+    /**
+     * A demo layout component
+     * @customTag This is a custom tag for the documentation
+     */
+    interface MyLayout {
     }
 }
 declare global {
+    /**
+     * The default demo component
+     */
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    /**
+     * A demo layout component
+     * @customTag This is a custom tag for the documentation
+     */
+    interface HTMLMyLayoutElement extends Components.MyLayout, HTMLStencilElement {
+    }
+    var HTMLMyLayoutElement: {
+        prototype: HTMLMyLayoutElement;
+        new (): HTMLMyLayoutElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "my-layout": HTMLMyLayoutElement;
     }
 }
 declare namespace LocalJSX {
+    /**
+     * The default demo component
+     */
     interface MyComponent {
         /**
           * The first name
          */
-        "first"?: string;
+        "first": string;
         /**
           * The last name
          */
@@ -47,15 +73,30 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    /**
+     * A demo layout component
+     * @customTag This is a custom tag for the documentation
+     */
+    interface MyLayout {
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "my-layout": MyLayout;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            /**
+             * The default demo component
+             */
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            /**
+             * A demo layout component
+             * @customTag This is a custom tag for the documentation
+             */
+            "my-layout": LocalJSX.MyLayout & JSXBase.HTMLAttributes<HTMLMyLayoutElement>;
         }
     }
 }

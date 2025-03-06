@@ -19,6 +19,16 @@ export const config: Config = {
     },
     {
       type: 'docs-readme',
+      strict: true,
+    },
+    {
+      type: 'docs-json',
+      file: 'docs/docs.json',
+      strict: true,
+    },
+    {
+      type: 'docs-vscode',
+      file: 'docs/vscode-data.json',
     },
     {
       type: 'www',
