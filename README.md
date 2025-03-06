@@ -29,3 +29,13 @@ npm run build
 | `npm run angular` | Serve the Angular demo app                                       |
 | `npm run vue`     | Serve the VueJs demo app                                         |
 | `npm run version` | Increment the packages versions                                  |
+
+## Information
+
+Lerna use Nx behind the scene. You can also use the nx commands.
+
+```
+npx lerna run build --scope=angular-app
+=
+npx nx build angular-app
+```
