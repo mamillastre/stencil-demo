@@ -1,0 +1,14 @@
+{
+  "name": "ssr-app",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@stencil-demo/elements": "*"
+  }
+}
