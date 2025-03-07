@@ -28,6 +28,6 @@ export interface ElementsConfig {
  * Initialize the Elements library
  * @param config
  */
-export function initialize(config: ElementsConfig): void {
-  window.libElementsConfig = config;
+export function initialize(config?: ElementsConfig): void {
+  window.libElementsConfig = config ?? {};
 }

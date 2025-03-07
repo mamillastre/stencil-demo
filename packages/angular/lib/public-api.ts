@@ -1,5 +1,5 @@
 /*
- * Public API Surface of rdr-elements
+ * Public API Surface of the elements library
  */
 
 export * from './provider';

@@ -4,7 +4,7 @@ import { ElementsConfig, initialize } from '@stencil-demo/elements';
 // import { defineCustomElements } from '@stencil-demo/elements/loader';
 
 /**
- * Sets up providers necessary to use the RDR library in the application.
+ * Sets up providers necessary to use the elements library in the application.
  */
 export function provideAngularElements(config?: ElementsConfig) {
   return makeEnvironmentProviders([
