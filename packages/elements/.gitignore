@@ -3,6 +3,7 @@ www/
 loader/
 docs/
 hydrate/
+components/
 
 *~
 *.sw[mnpcod]

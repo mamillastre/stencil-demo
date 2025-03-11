@@ -14,6 +14,10 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "@stencil-demo/elements": "*"
+    "@stencil-demo/elements": "*",
+    "@stencil/vue-output-target": "^0.9.6"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   }
 }

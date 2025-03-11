@@ -7,12 +7,13 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/elements/elements.esm.js",
+  "unpkg": "dist/stencil-demo/stencil-demo.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ionic-team/stencil-component-starter.git"
   },
   "files": [
+    "components",
     "dist/",
     "loader/",
     "docs/",
@@ -32,6 +33,7 @@
     "@stencil-community/eslint-plugin": "^0.10.0",
     "@stencil/angular-output-target": "^0.10.2",
     "@stencil/core": "^4.7.0",
+    "@stencil/vue-output-target": "^0.9.6",
     "@types/jest": "^29.5.14",
     "eslint": "^9.21.0",
     "globals": "^16.0.0",

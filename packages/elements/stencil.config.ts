@@ -3,7 +3,8 @@ import { angularOutputTarget } from '@stencil/angular-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
 
 const componentCorePackage = '@stencil-demo/elements';
-const customElementsDir = 'dist/components';
+const customElementsDir = 'components';
+const hydrateDir = 'hydrate';
 
 export const config: Config = {
   namespace: 'stencil-demo',
@@ -16,6 +17,7 @@ export const config: Config = {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'single-export-module',
       externalRuntime: false,
+      dir: 'components',
     },
     {
       type: 'docs-readme',
@@ -36,6 +38,7 @@ export const config: Config = {
     },
     {
       type: 'dist-hydrate-script',
+      dir: hydrateDir,
     },
     angularOutputTarget({
       componentCorePackage,
@@ -47,11 +50,21 @@ export const config: Config = {
       componentCorePackage,
       proxiesFile: '../vue/lib/stencil-generated/components.ts',
       includeImportCustomElements: true,
+      includePolyfills: false,
+      includeDefineCustomElements: false,
       customElementsDir,
+      // The Nuxt SSR do not work well for the moment with the slots: https://github.com/stenciljs/output-targets/issues/632
+      // hydrateModule: `${componentCorePackage}/${hydrateDir}`,
     }),
   ],
   buildEs5: 'prod',
   testing: {
     browserHeadless: 'shell',
+  },
+  extras: {
+    // https://stenciljs.com/docs/config-extras#experimentalslotfixes
+    experimentalSlotFixes: true,
+    // https://stenciljs.com/docs/config-extras#experimentalscopedslotchanges
+    experimentalScopedSlotChanges: true,
   },
 };
