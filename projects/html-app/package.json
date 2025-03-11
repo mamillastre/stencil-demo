@@ -1,5 +1,14 @@
 {
   "name": "html-app",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "@stencil-demo/elements": "*"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
 }

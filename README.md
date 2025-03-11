@@ -29,7 +29,8 @@ npm run build
 | `npm run angular` | Serve the Angular demo app                                       |
 | `npm run vue`     | Serve the VueJs demo app                                         |
 | `npm run nuxt`    | Serve the Nuxt demo app                                          |
-| `npm run ssr`     | Serve the SSR demo app using NodeJs                              |
+| `npm run node`    | Serve the NodeJs demo app using SSR                              |
+| `npm run html`    | Serve the HTML demo app                                          |
 | `npm run version` | Increment the packages versions                                  |
 
 ## Information

@@ -10,7 +10,7 @@ const html = `
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo SSR</title>
+    <title>Demo Node</title>
 
     <script type="module" src="/scripts/stencil-demo.esm.js"></script>
     <script nomodule src="/scripts/stencil-demo.js"></script>

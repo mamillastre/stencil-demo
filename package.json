@@ -12,7 +12,8 @@
     "angular": "lerna run start --scope=angular-app",
     "vue": "lerna run start --scope=vue-app",
     "nuxt": "lerna run start --scope=nuxt-app",
-    "ssr": "lerna run start --scope=ssr-app",
+    "node": "lerna run start --scope=node-app",
+    "html": "lerna run start --scope=html-app",
     "version": "lerna version --conventional-commits --no-push"
   },
   "devDependencies": {
