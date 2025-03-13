@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
   <title>Stencil Component Starter</title>
 
-  <script type="module" src="/build/stencildemo.esm.js"></script>
-  <script nomodule src="/build/stencildemo.js"></script>
+  <script type="module" src="/build/stencil-demo.esm.js"></script>
+  <script nomodule src="/build/stencil-demo.js"></script>
 </head>
 
 <body>
   <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
+
+  <hr />
+
+  <my-layout>
+    <div slot="footer">Footer</div>
+    Content
+    <div slot="header">Header</div>
+  </my-layout>
 </body>
 
 </html>

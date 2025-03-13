@@ -1,6 +1,7 @@
 import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
+import { sass } from '@stencil/sass';
 
 const componentCorePackage = '@stencil-demo/elements';
 const customElementsDir = 'components';
@@ -58,6 +59,7 @@ export const config: Config = {
     }),
   ],
   buildEs5: 'prod',
+  plugins: [sass()],
   testing: {
     browserHeadless: 'shell',
   },

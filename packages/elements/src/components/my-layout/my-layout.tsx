@@ -15,7 +15,7 @@ import { Component, Host, h } from '@stencil/core';
  */
 @Component({
   tag: 'my-layout',
-  styleUrl: 'my-layout.css',
+  styleUrl: 'my-layout.scss',
   shadow: true,
 })
 export class MyLayout {

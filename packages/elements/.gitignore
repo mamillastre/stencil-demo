@@ -1,9 +1,9 @@
-dist/
-www/
-loader/
-docs/
-hydrate/
-components/
+/dist/
+/www/
+/loader/
+/docs/
+/hydrate/
+/components/
 
 *~
 *.sw[mnpcod]
