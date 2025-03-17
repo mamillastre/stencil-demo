@@ -27,3 +27,7 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 .env
+
+# playwright
+core/test-results/
+core/playwright-report/

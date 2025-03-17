@@ -10,7 +10,15 @@ describe('my-layout', () => {
     expect(page.root).toEqualHtml(`
       <my-layout>
         <mock:shadow-root>
-          <slot></slot>
+          <div part="header">
+            <slot name="header"></slot>
+          </div>
+          <div class="content" part="content">
+            <slot></slot>
+          </div>
+          <div part="footer">
+            <slot name="footer"></slot>
+          </div>
         </mock:shadow-root>
       </my-layout>
     `);

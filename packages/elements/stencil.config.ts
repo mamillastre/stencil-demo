@@ -34,8 +34,10 @@ export const config: Config = {
       file: 'docs/vscode-data.json',
     },
     {
+      // For testing purpose
       type: 'www',
       serviceWorker: null, // disable service workers
+      copy: [{ src: '**/test/*.html' }], // Copy the html files to be used by playwright
     },
     {
       type: 'dist-hydrate-script',
