@@ -31,6 +31,7 @@ npm run build
 | `npm run nuxt`    | Serve the Nuxt demo app                                          |
 | `npm run node`    | Serve the NodeJs demo app using SSR                              |
 | `npm run html`    | Serve the HTML demo app                                          |
+| `npm run docs`    | Serve the documentation website                                  |
 | `npm run version` | Increment the packages versions                                  |
 
 ## Information
