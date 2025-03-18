@@ -29,5 +29,5 @@ UserInterfaceState.xcuserstate
 .env
 
 # playwright
-core/test-results/
-core/playwright-report/
+/test-results/
+/playwright-report/
