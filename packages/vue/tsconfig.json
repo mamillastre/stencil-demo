@@ -20,7 +20,8 @@
     "removeComments": false,
     "sourceMap": true,
     "jsx": "react",
-    "target": "es2017"
+    "target": "es2017",
+    "types": []
   },
   "include": [
     "lib"
