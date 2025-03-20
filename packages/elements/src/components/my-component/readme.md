@@ -1,11 +1,23 @@
 # Button
 
+Selector: `my-button`
+
 <!-- Auto Generated Below -->
 
 
 ## Overview
 
 The default demo component
+
+## Usage
+
+### Common usage
+
+```html
+<my-component first="Firstname" middle="Middlename" last="LastName"></my-component>
+```
+
+
 
 ## Properties
 

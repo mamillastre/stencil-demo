@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
 import { sass } from '@stencil/sass';
+import { apiDocGenerator } from './scripts/api-doc-generator';
 
 const componentCorePackage = '@stencil-demo/elements';
 const customElementsDir = 'components';
@@ -29,6 +30,9 @@ export const config: Config = {
       file: 'docs/docs.json',
       strict: true,
     },
+    apiDocGenerator({
+      dir: '../../projects/docs/docs/components',
+    }),
     {
       type: 'docs-vscode',
       file: 'docs/vscode-data.json',

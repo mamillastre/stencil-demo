@@ -51,8 +51,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "Stencil Demo",
       logo: {
@@ -62,9 +60,9 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "documentationSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Documentation",
         },
         {
           href: "https://github.com/facebook/docusaurus",
@@ -80,7 +78,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Documentation",
               to: "/docs/intro",
             },
           ],
