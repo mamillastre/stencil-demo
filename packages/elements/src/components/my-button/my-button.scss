@@ -1,0 +1,88 @@
+/**
+   * @prop --background: Background of the button
+   * @prop --background-hover: Background of the button on hover
+   * @prop --background-focus: Background of the button on focus
+   * @prop --background-disabled: Background of the button when disabled
+   *
+   * @prop --color: Button text color
+   * @prop --color-hover: Button text color on hover
+   * @prop --color-focus: Button text color on focus
+   * @prop --color-disabled: Button text color when disabled
+   *
+   * @prop --border-focus: Button border on focus
+   */
+:host {
+  --background: #3BC49B;
+  --background-hover: #309c7c;
+  --background-focus: var(--background-hover);
+  --background-disabled: #CDD0CF;
+  --color: #000;
+  --color-hover: var(--color);
+  --color-focus: var(--color);
+  --color-disabled: var(--color);
+  --border-focus: 1px solid var(--color);
+
+  display: inline-block;
+  width: auto;
+  font-size: .75rem;
+
+  vertical-align: top;
+  vertical-align: -webkit-baseline-middle;
+}
+
+button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 2rem;
+
+  outline: none;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+
+  padding: .5rem;
+
+  background-color: var(--background);
+  color: var(--color);
+
+  font-size: inherit;
+
+  &:hover {
+    background-color: var(--background-hover);
+    color: var(--color-hover);
+  }
+
+  &:focus {
+    background-color: var(--background-focus);
+    color: var(--color-focus);
+
+    &::after {
+      content: "";
+      border: var(--border-focus);
+      display: block;
+      position: absolute;
+      inset: 0;
+    }
+  }
+}
+
+:host(.button-disabled) {
+  pointer-events: none;
+
+  button {
+    cursor: default;
+    background-color: var(--background-disabled);
+    color: var(--color-disabled);
+  }
+}
+
+::slotted([slot=start]) {
+  margin-inline-end: .5rem;
+}
+
+::slotted(my-icon) {
+  font-size: 1.33em;
+}

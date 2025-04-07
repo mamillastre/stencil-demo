@@ -1,0 +1,12 @@
+{
+  "codeConnect": {
+    "label": "VueJs",
+    "include": [
+      "./figma/**/*.figma.ts"
+    ],
+    "exclude": [
+      "**/node_modules/**",
+      "./lib/**"
+    ]
+  }
+}

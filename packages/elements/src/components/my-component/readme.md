@@ -1,6 +1,6 @@
-# Button
+# Component
 
-Selector: `my-button`
+Selector: `my-component`
 
 <!-- Auto Generated Below -->
 

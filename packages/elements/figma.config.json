@@ -1,0 +1,11 @@
+{
+  "codeConnect": {
+    "label": "HTML",
+    "include": [
+      "./src/**/*.figma.ts"
+    ],
+    "exclude": [
+      "**/node_modules/**"
+    ]
+  }
+}

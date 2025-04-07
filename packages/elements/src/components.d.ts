@@ -7,6 +7,15 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     /**
+     * Button component
+     */
+    interface MyButton {
+        /**
+          * If `true`, the user cannot interact with the button.
+         */
+        "disabled": boolean;
+    }
+    /**
      * The default demo component
      */
     interface MyComponent {
@@ -39,6 +48,20 @@ export namespace Components {
          */
         "initialValue": number;
     }
+    interface MyIcon {
+        /**
+          * The alternative name of the icon
+         */
+        "alt": string;
+        /**
+          * The icon source
+         */
+        "icon"?: string;
+        /**
+          * The icon key
+         */
+        "name"?: 'circle-user' | 'house';
+    }
     /**
      * A demo layout component
      * @customTag This is a custom tag for the documentation
@@ -51,6 +74,15 @@ export interface MyCounterCustomEvent<T> extends CustomEvent<T> {
     target: HTMLMyCounterElement;
 }
 declare global {
+    /**
+     * Button component
+     */
+    interface HTMLMyButtonElement extends Components.MyButton, HTMLStencilElement {
+    }
+    var HTMLMyButtonElement: {
+        prototype: HTMLMyButtonElement;
+        new (): HTMLMyButtonElement;
+    };
     /**
      * The default demo component
      */
@@ -77,6 +109,12 @@ declare global {
         prototype: HTMLMyCounterElement;
         new (): HTMLMyCounterElement;
     };
+    interface HTMLMyIconElement extends Components.MyIcon, HTMLStencilElement {
+    }
+    var HTMLMyIconElement: {
+        prototype: HTMLMyIconElement;
+        new (): HTMLMyIconElement;
+    };
     /**
      * A demo layout component
      * @customTag This is a custom tag for the documentation
@@ -88,12 +126,23 @@ declare global {
         new (): HTMLMyLayoutElement;
     };
     interface HTMLElementTagNameMap {
+        "my-button": HTMLMyButtonElement;
         "my-component": HTMLMyComponentElement;
         "my-counter": HTMLMyCounterElement;
+        "my-icon": HTMLMyIconElement;
         "my-layout": HTMLMyLayoutElement;
     }
 }
 declare namespace LocalJSX {
+    /**
+     * Button component
+     */
+    interface MyButton {
+        /**
+          * If `true`, the user cannot interact with the button.
+         */
+        "disabled"?: boolean;
+    }
     /**
      * The default demo component
      */
@@ -121,6 +170,20 @@ declare namespace LocalJSX {
          */
         "onValueChange"?: (event: MyCounterCustomEvent<number>) => void;
     }
+    interface MyIcon {
+        /**
+          * The alternative name of the icon
+         */
+        "alt"?: string;
+        /**
+          * The icon source
+         */
+        "icon"?: string;
+        /**
+          * The icon key
+         */
+        "name"?: 'circle-user' | 'house';
+    }
     /**
      * A demo layout component
      * @customTag This is a custom tag for the documentation
@@ -128,8 +191,10 @@ declare namespace LocalJSX {
     interface MyLayout {
     }
     interface IntrinsicElements {
+        "my-button": MyButton;
         "my-component": MyComponent;
         "my-counter": MyCounter;
+        "my-icon": MyIcon;
         "my-layout": MyLayout;
     }
 }
@@ -138,10 +203,15 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             /**
+             * Button component
+             */
+            "my-button": LocalJSX.MyButton & JSXBase.HTMLAttributes<HTMLMyButtonElement>;
+            /**
              * The default demo component
              */
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "my-counter": LocalJSX.MyCounter & JSXBase.HTMLAttributes<HTMLMyCounterElement>;
+            "my-icon": LocalJSX.MyIcon & JSXBase.HTMLAttributes<HTMLMyIconElement>;
             /**
              * A demo layout component
              * @customTag This is a custom tag for the documentation

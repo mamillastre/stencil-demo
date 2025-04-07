@@ -11,7 +11,8 @@
   "scripts": {
     "build": "npm run clean && npm run tsc",
     "tsc": "tsc -p . --outDir ./dist",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "figma:publish": "figma connect publish"
   },
   "dependencies": {
     "@stencil-demo/elements": "*",

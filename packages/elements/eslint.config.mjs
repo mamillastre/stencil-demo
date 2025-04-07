@@ -8,7 +8,7 @@ import stencilLint from "@stencil-community/eslint-plugin";
 export default [
   { files: ["**/*.{js,mjs,cjs,ts}"] },
   {
-    ignores: ["dist", "loader", "www", "docs", "hydrate", "eslint.config.mjs", "stencil.config.ts", "playwright.config.ts"]
+    ignores: ["dist", "loader", "www", "docs", "hydrate", "eslint.config.mjs", "stencil.config.ts", "playwright.config.ts", "**/*.figma.ts", "scripts"]
   },
   {
     languageOptions: {

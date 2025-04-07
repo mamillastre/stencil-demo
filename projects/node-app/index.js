@@ -40,6 +40,15 @@ const html = `
         });
         })();
       </script>
+
+
+      <hr />
+
+      <my-button>
+        <my-icon name="circle-user" slot="start"></my-icon>
+        Label
+      </my-button>
+
     </body>
 
   </html>
