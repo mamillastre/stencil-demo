@@ -1,4 +1,5 @@
-/**
+:host {
+  /**
    * @prop --background: Background of the button
    * @prop --background-hover: Background of the button on hover
    * @prop --background-focus: Background of the button on focus
@@ -11,7 +12,7 @@
    *
    * @prop --border-focus: Button border on focus
    */
-:host {
+
   --background: #3BC49B;
   --background-hover: #309c7c;
   --background-focus: var(--background-hover);

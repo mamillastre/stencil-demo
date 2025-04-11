@@ -1,8 +1,8 @@
-/**
- * @prop --content-color: Example variable for the content color
- */
-
 :host {
+  /**
+   * @prop --content-color: Example variable for the content color
+   */
+
   --content-color: currentcolor;
 
   display: block;
