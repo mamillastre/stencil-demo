@@ -12,6 +12,7 @@
     "angular": "lerna run start --scope=angular-app",
     "angular:watch": "lerna run build --scope=angular-app && nx run-many -t watch -p @stencil-demo/elements @stencil-demo/angular angular-app --parallel=3 --output-style=stream",
     "vue": "lerna run start --scope=vue-app",
+    "vue:watch": "lerna run build --scope=vue-app && nx run-many -t watch -p @stencil-demo/elements @stencil-demo/vue vue-app --parallel=3 --output-style=stream",
     "nuxt": "lerna run start --scope=nuxt-app",
     "node": "lerna run start --scope=node-app",
     "html": "lerna run start --scope=html-app",

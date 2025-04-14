@@ -11,6 +11,7 @@
   "scripts": {
     "build": "npm run clean && npm run tsc",
     "tsc": "tsc -p . --outDir ./dist",
+    "watch": "npm run clean && npm run tsc -- --watch --preserveWatchOutput",
     "clean": "rimraf dist",
     "figma:publish": "figma connect publish"
   },
